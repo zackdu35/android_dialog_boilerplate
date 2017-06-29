@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:background="@color/blue"
+        android:elevation="5dp"
+        android:paddingTop="20dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/menu_inner"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:weightSum="3"
+            android:paddingBottom="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                />
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                />
+
+            <TextView
+                android:id="@+id/tv_third"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_height="17dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1.00"
+                android:id="@+id/menu_select"
+                android:background="@mipmap/unselected_menu"
+                android:layout_gravity="bottom"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/menu"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/pager_indicator"
+        android:id="@+id/menu_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"
+
+        />
+
+
+</RelativeLayout>

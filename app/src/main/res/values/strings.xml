@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">pager boilerplate</string>
+    <string name="app_name">dialog boilerplate</string>
+    <string name="submit">submit</string>
+    <string name="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="title">Title</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string>
+    <string name="firstButton">first</string>
+    <string name="secondButton">second</string>
+    <string name="thirdButton">third</string>
+    <string name="fourthButton">fourth</string>
+    <string name="custom_title">Custom dialog</string>
 </resources>

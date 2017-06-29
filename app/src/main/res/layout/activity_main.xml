@@ -1,129 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
     >
 
 
-
-
-
-    <LinearLayout
-        android:id="@+id/menu"
-        android:orientation="vertical"
+    <Button
+        android:id="@+id/simple_dialog"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="10"
-        android:background="@color/blue"
-        android:elevation="5dp"
-        android:paddingTop="20dp"
-        >
+        android:layout_height="0dp"
+        android:textSize="22dp"
+        android:text="Simple dialog"
+        android:layout_weight="1.66"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#ddd"
+        android:textAllCaps="true"
+        />
 
-        <LinearLayout
-            android:id="@+id/menu_inner"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="9"
-            android:weightSum="3"
-            android:paddingBottom="15dp"
-            >
-
-            <TextView
-                android:id="@+id/tv_one"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:text="1"
-                android:textColor="#fff"
-                android:textSize="30dp"
-                android:gravity="center"
-                android:background="@android:color/transparent"
-                />
-
-            <TextView
-                android:id="@+id/tv_two"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:text="2"
-                android:textColor="#fff"
-                android:textSize="30dp"
-                android:gravity="center"
-                android:background="@android:color/transparent"
-                />
-
-            <TextView
-                android:id="@+id/tv_third"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:text="3"
-                android:textColor="#fff"
-                android:textSize="30dp"
-                android:gravity="center"
-                android:background="@android:color/transparent"
-                />
-
-
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:weightSum="3"
-            android:orientation="horizontal"
-            >
-
-            <RelativeLayout
-                android:layout_height="17dp"
-                android:layout_width="wrap_content"
-                android:layout_weight="1.00"
-                android:id="@+id/menu_select"
-                android:background="@mipmap/unselected_menu"
-                android:layout_gravity="bottom"
-                />
-
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#fff"
-        android:layout_below="@+id/menu"
-        android:weightSum="10"
-        android:orientation="vertical"
-        >
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            />
-
-
-    </RelativeLayout>
-
-    <include layout="@layout/pager_indicator"
-        android:id="@+id/menu_indicator"
+    <Button
+        android:id="@+id/one_button_dialog"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:paddingBottom="20dp"
+        android:layout_height="0dp"
+        android:textSize="22dp"
+        android:text="one button dialog"
+        android:layout_weight="1.66"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#ccc"
+        android:textAllCaps="true"
+        />
 
+    <Button
+        android:id="@+id/yes_no_button_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="22dp"
+        android:text="yes/no dialog"
+        android:layout_weight="1.66"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#bbb"
+        android:textAllCaps="true"
         />
 
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/three_button_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="22dp"
+        android:text="three button dialog"
+        android:layout_weight="1.66"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#aaa"
+        android:textAllCaps="true"
+        />
+
+    <Button
+        android:id="@+id/four_button_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="22dp"
+        android:text="four button dialog"
+        android:layout_weight="1.66"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#999"
+        android:textAllCaps="true"
+        />
+
+    <Button
+        android:id="@+id/custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="22dp"
+        android:text="custom dialog"
+        android:layout_weight="1.66"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#888"
+        android:textAllCaps="true"
+        />
+
+</LinearLayout>
